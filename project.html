@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Project — Portfolio Raka</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .projects-page {
+      min-height: 100vh;
+      padding: 150px 8% 100px;
+      background: #e7e2d9;
+    }
+
+    .projects-page-header {
+      max-width: 800px;
+      margin-bottom: 70px;
+    }
+
+    .projects-page-header h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(60px, 10vw, 120px);
+      line-height: 0.9;
+      letter-spacing: -6px;
+      margin-bottom: 25px;
+    }
+
+    .projects-page-header h1 span {
+      color: #ff5c35;
+    }
+
+    .projects-page-header p {
+      max-width: 600px;
+      color: #666;
+      font-size: 18px;
+    }
+
+    .all-projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .all-project-card {
+      min-height: 340px;
+      padding: 30px;
+      background: white;
+      border-radius: 24px;
+      display: flex;
+      flex-direction: column;
+      transition: 0.3s ease;
+    }
+
+    .all-project-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .project-top {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      font-weight: 700;
+      color: #888;
+    }
+
+    .all-project-card h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 34px;
+      margin-top: auto;
+      margin-bottom: 15px;
+      letter-spacing: -1px;
+    }
+
+    .all-project-card p {
+      color: #777;
+      margin-bottom: 25px;
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-top: 60px;
+      padding: 13px 20px;
+      border: 1px solid #151515;
+      border-radius: 100px;
+      font-weight: 700;
+      transition: 0.25s ease;
+    }
+
+    .back-home:hover {
+      background: #151515;
+      color: white;
+    }
+
+    @media (max-width: 850px) {
+      .all-projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .projects-page {
+        padding-top: 130px;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .projects-page {
+        padding: 120px 6% 80px;
+      }
+
+      .projects-page-header h1 {
+        font-size: 65px;
+        letter-spacing: -4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">RAKA<span>.</span></div>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#project">Project</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="projects-page">
+
+      <div class="projects-page-header">
+        <div class="section-label">05 — ALL PROJECTS</div>
+
+        <h1>
+          Semua<br>
+          <span>Project.</span>
+        </h1>
+
+        <p>
+          Berikut adalah kumpulan project yang pernah saya buat
+          dan sedang saya kerjakan.
+        </p>
+      </div>
+
+      <div class="all-projects-grid">
+
+        <article class="all-project-card">
+          <div class="project-top">
+            <span>PROJECT 01</span>
+            <span>↗</span>
+          </div>
+
+          <h2>Portfolio Website</h2>
+
+          <p>
+            Website portfolio pribadi menggunakan HTML,
+            CSS, dan JavaScript.
+          </p>
+
+          <button class="project-btn">
+            Lihat Project
+          </button>
+        </article>
+
+
+        <article class="all-project-card">
+          <div class="project-top">
+            <span>PROJECT 02</span>
+            <span>↗</span>
+          </div>
+
+          <h2>Website Sekolah</h2>
+
+          <p>
+            Website informasi sekolah dengan tampilan
+            yang sederhana dan responsif.
+          </p>
+
+          <button class="project-btn">
+            Lihat Project
+          </button>
+        </article>
+
+
+        <article class="all-project-card">
+          <div class="project-top">
+            <span>PROJECT 03</span>
+            <span>↗</span>
+          </div>
+
+          <h2>Coming Soon</h2>
+
+          <p>
+            Project berikutnya akan segera ditambahkan
+            di sini.
+          </p>
+
+          <button class="project-btn">
+            Coming Soon
+          </button>
+        </article>
+
+
+        <article class="all-project-card">
+          <div class="project-top">
+            <span>PROJECT 04</span>
+            <span>↗</span>
+          </div>
+
+          <h2>Landing Page</h2>
+
+          <p>
+            Landing page modern untuk menampilkan
+            informasi sebuah produk atau layanan.
+          </p>
+
+          <button class="project-btn">
+            Lihat Project
+          </button>
+        </article>
+
+
+        <article class="all-project-card">
+          <div class="project-top">
+            <span>PROJECT 05</span>
+            <span>↗</span>
+          </div>
+
+          <h2>To-Do List</h2>
+
+          <p>
+            Aplikasi sederhana untuk mencatat dan
+            mengatur daftar tugas menggunakan JavaScript.
+          </p>
+
+          <button class="project-btn">
+            Lihat Project
+          </button>
+        </article>
+
+
+        <article class="all-project-card">
+          <div class="project-top">
+            <span>PROJECT 06</span>
+            <span>↗</span>
+          </div>
+
+          <h2>Website Blog</h2>
+
+          <p>
+            Konsep website blog sederhana dengan tampilan
+            bersih dan mudah digunakan.
+          </p>
+
+          <button class="project-btn">
+            Lihat Project
+          </button>
+        </article>
+
+      </div>
+
+      <a href="index.html#project" class="back-home">
+        ← Kembali ke Home
+      </a>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Raka Rafiandra</p>
+    <p>Made with HTML • CSS • JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
