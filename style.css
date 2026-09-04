@@ -504,10 +504,9 @@ footer {
 }
 
 .all-projects-link {
-  margin-top: 35px;
-  text-align: center;
+  margin-top: 10px;
+  text-align: left;
 }
-
 .all-projects-link .button {
   background: #151515;
 }
